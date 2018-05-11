@@ -2,10 +2,8 @@ import React from 'react'
 import {render} from 'react-dom'
 
 class MyFileInput extends React.Component {
-
-
     constructor(props) {
-        super(props)
+        super(props);
         this.handleFile = this.handleFile.bind(this)
     }
 
@@ -31,7 +29,7 @@ class MyFileInput extends React.Component {
 class Clock extends React.Component {
 
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {date: new Date()};
     }
 
@@ -79,7 +77,7 @@ class ButtonStopClock
         this.state = {
             background: "black",
             isToggleOn: false
-        }
+        };
         this.handleClick = this.handleClick.bind(this);
     }
 
@@ -98,6 +96,7 @@ class ButtonStopClock
         }));
     }
 
+    //Not working in my source
     // handleClick2 = () => {
     //     this.setState(prevState => ({
     //         background: 'red',
@@ -106,9 +105,6 @@ class ButtonStopClock
     // }
 }
 
-
-// const MouseTracker =
-
 render(
     <div>
         <Clock/>
@@ -116,4 +112,4 @@ render(
         <MyFileInput/>
     </div>,
     document.getElementById('root')
-)
+);
